@@ -4,6 +4,13 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background: white;
+  color: black;
+  padding:15px
+}
+html,code{
+  font-size:15px/22px; 
+  font: arial,sans-serif;
 }
 
 *, *:before, *:after {
@@ -15,6 +22,7 @@ body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
+
 }
 
 /* images and videos max out at full width */
