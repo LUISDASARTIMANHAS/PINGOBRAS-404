@@ -5182,7 +5182,7 @@ Horizon.prototype = {
       <div class="icon icon-offline" jseval="updateIconClass(this.classList, iconClass)" alt="" jstcache="1"></div>
       <div id="main-message" jstcache="0">
         <h1 jstcache="0">
-          <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="10">No internet</span>
+          <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="10">Bad Gateway, No Conection</span>
           <a id="error-information-button" class="hidden" onclick="toggleErrorInformationPopup();" jstcache="0"></a>
         </h1>
         <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="2">No internet</p>
@@ -5190,18 +5190,20 @@ Horizon.prototype = {
           in which case error-information-popup-* divs have no effect. When
           error-information-popup-container has the use-popup-container class, this
           information is provided in a popup instead.-->
-        <div id="error-information-popup-container" jstcache="0">
-          <div id="error-information-popup" jstcache="0">
-            <div id="error-information-popup-box" jstcache="0">
-              <div id="error-information-popup-content" jstcache="0">
-                <div id="suggestions-list" style="" jsdisplay="(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)" jstcache="17">
-                  <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="19">Try:</p>
-                  <ul jsvalues=".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''" jstcache="20" class="">
+<div id="error-information-popup-container" jstcache="0">
+<div id="error-information-popup" jstcache="0">
+<div id="error-information-popup-box" jstcache="0">
+<div id="error-information-popup-content" jstcache="0">
+<div id="suggestions-list" style="" jsdisplay="(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)" jstcache="17">
+  
+<ul jsvalues=".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''" jstcache="20" class="">
                     
-                    <a href="javascript:diagnoseErrors()" id="diagnose-link" jstcache="0">Running Connectivity Diagnostics</a></li>
-                  </ul>
-                </div>
-                <div class="error-code" jscontent="errorCode" jstcache="18">500 SERVER_TIME_OUT</div>
+<a href="javascript:diagnoseErrors()" id="diagnose-link" jstcache="0">Running Connectivity Diagnostics</a>
+  <br>
+  <a href="http://192.168.1.1" jstcache="0">Running Connectivity Host</a>
+</ul>
+</div>
+<div class="error-code" jscontent="errorCode" jstcache="18">500 SERVER_TIME_OUT</div>
                 <p id="error-information-popup-close" jstcache="0">
                   <a class="link-button" jscontent="closeDescriptionPopup" onclick="toggleErrorInformationPopup();" jstcache="21">null</a>
                 </p>
